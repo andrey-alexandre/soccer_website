@@ -1,0 +1,14 @@
+{
+  "type": "service_account",
+  "project_id": "soccer-391322",
+  "private_key_id": "e7e37b2a4558646d75bb64c2820283be03764d0c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2iF3vWnE5xqc7\n7T3UWdWZ45GDQCK9LCaHK9pleNGGXrJ2RIiQCeTvzDp9+A3vkAb9Z6pSeKcXNnBk\nIRyxz7pX0wX/1r9J3f46pySe6rCRcopnTRoWW/4MMmEbLs0GDrEcj7y2LZShZvcR\nO69bwlK8qC7Muj0ppdGQ2+Ky4eXPLaJYC5EpxBPf1BY5GH9uk9I3QRtzKdDxOKOP\naBXym5eH1uEmHwIAaS73BcaaDlbU1T/eSHghzX9MIorcPUB1pvZ6+4ao1Rz2p0+V\n3gOv6tPKU8CNMImYVQ2QdcRRr6r5A4TLlWt+fbF338OZcYYkoQjI/3PQhaChuS8p\n3uYdYbNjAgMBAAECggEABHynqnmTrPLoK33ydiTbLlQ8wHg0ImhSbiIy1Sm6JM5x\nHp0iqj/EA+0GRxBw70GgGlyRAEP8/4IUEzIJLYnIr939GMPjoeI2HKT9LnbgbkLd\nihqIGKKcRRp77pog6hQ0YFpcLjJCpBEO47qO3feR5xdPRzMQy9RKqX/uO61347bV\n03ZK/h5XpeAn1hXSLeFs1PkIFx1gHlLA/n/tvLhfTgA8v35PpVf4N94coU0RfGUn\ns9bNF6HmT+i1GT8y09mmoNPf2X8Yo4dwEu5XTMaygsPRZBvrBbnC8feX+M9rnLQj\nFxqahB8/i3TdV3iuTPknx7Wp23+cg3Yv1k+Ps1iSEQKBgQDf2Mi4rcZv2QQXq0ph\nIhb49vYYMXw/ehQf1frUXSJE0SJjy/fOjHW6a7VMNwOhgz34ci/ddGNszqUk9jY+\nlFYTCBxUXJDTEZEHs2pXoEnP/8PjGnYIbxMifgEW3qR+PFOwKXghzP17BU7Alizz\nzPFEsP2+DdnqLKfbUhuaFRES+QKBgQDQwGTwQUz5AerlP9YFjn9HJuO2eyDl5KZz\nUQlstCAsCjRKi2ex/4hr1ISt91m4GvvaGEWWAAwqrK6ofPE5piBYfM2b6ZgC7DnH\nvxvCcsmmR7qWHDvVmQD6Nh/UoqdQUAixUUd1b8AlfcipVeVsGcyRQ8tus/oNXjuM\npxLoaYX0OwKBgE66pk4eAG8SOthATJbBMKc75O45aWPCAhX4YpISd50QmTHUaUHi\nMP3yJ/+4UbSavk8FikQvTVDVlUvctNNpxKRI8/3P2LgDs6irt7k+DPf1EuZrRhxN\nRMOa4bMzd1NW0HBjBXeN65E7Gqmtp/3PlQP95CDWKlCsiBUhWcflpO2xAoGBALk7\nTxXlS9DUw8Mijt2lYQkY2AxvW3TDHHPM34kGmFmbwGS5KI1IipvsGsNnbcQwpXQT\n/4MnjaQ8UEsPetlFsQPz0lpbv9gwFuFIkfBL/OTAVy+l4+4X80cSydHbdo2MRvpY\nfgkV3TEnWOvxXT878UqhFp2ns+UyzbJz+hIiuItLAoGABd2TO/XEDdbUO/TsY8f7\nl/N7/fzKIGYEsFpPvBfI7ryIjkuudQqUvc65Ztu3qvONBlhER5MLdOq+aWp948ai\n+IEJ32nFoETrZrcS3mrfn/ai+1qsc184V3gF8iwD5AOae/yW077N5wBsVIhOgwzo\nqePTmzH3ivEkXbNwfhMTUDs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "soccerapi@soccer-391322.iam.gserviceaccount.com",
+  "client_id": "116871962631959720203",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/soccerapi%40soccer-391322.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+

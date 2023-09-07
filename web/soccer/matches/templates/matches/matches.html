@@ -1,0 +1,22 @@
+{% extends "matches/base.html" %}
+{% block content %}
+    <h1>Matches Page</h1>
+    <table class="table table-dark table-striped">
+      <tr>
+        {% for col in data.columns %}
+          <td>
+            {{col}}
+          </td>
+        {% endfor %}
+      </tr>
+        {% for index, row in data.iterrows %}
+          <tr>
+            {% for cell in row %}
+              <td>
+                {{cell}}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}
