@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import django_tables2 as tables 
 
 import json
 import gspread
@@ -7,20 +8,18 @@ import pandas as pd
 
 from matches.script.one import action
 
+from .filters import MatchesFilter
+from .models import Matches
+from .tables import MatchesTable
 
-# Create your views here.
+# Create your views here.        
 def home(request):
-    gc = gspread.service_account(filename='Soccer.json')
-    sh = gc.open("Soccer")
-    worksheet = sh.worksheet('Soccer')
-    df = pd.DataFrame(worksheet.get_all_records())
-    df = df.head(10)
+    queryset = Matches.objects.filter(GameId=1187978)  # Você pode personalizar a consulta conforme necessário
+    table = MatchesTable(queryset)   
     
-    json_records = df.reset_index().to_json(orient ='records')
-    json_data = []
-    json_data = json.loads(json_records)
-    
-    context = {'data': df}
+    myFilter = MatchesFilter()
+    context = {'myFilter': myFilter, 'table': table}
+
     return render(request, 'matches/matches.html', context)
 
 def refresh(request):    
