@@ -4,6 +4,8 @@ cachetools==5.3.1
 certifi==2023.5.7
 charset-normalizer==3.2.0
 Django==4.2.3
+django-filter==23.3
+django-tables2==2.6.0
 google-auth==2.20.0
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
