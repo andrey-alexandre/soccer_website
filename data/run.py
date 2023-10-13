@@ -20,7 +20,7 @@ if __name__ == "__main__":
     options.add_argument('--no-sandbox')
     driver = [webdriver.Remote(command_executor='http://selenium_ui:4444/wd/hub', options=options) for i in range(5)]
 
-    matches_url_list = tools.get_matches(end, driver)
+    matches_url_list = tools.get_matches(end, driver[0])
     soccer_list = [Soccer(i) for i in matches_url_list]
     [soccer_list[i].run(driver[i % 5]) for i in range(len(soccer_list))]
     soccer_stats_full = pd.concat([tools.treat_stats(i) for i in soccer_list])

@@ -9,15 +9,17 @@ import pandas as pd
 from matches.script.one import action
 
 from .filters import MatchesFilter
-from .models import Matches
+from .models import Matches, MatchesAgg
 from .tables import MatchesTable
 
 # Create your views here.        
 def home(request):
-    queryset = Matches.objects.filter(GameId=1187978)  # Você pode personalizar a consulta conforme necessário
+    queryset_agg = MatchesAgg.objects.filter(GameId_id__in=[1187978, 1187977])  # Você pode personalizar a consulta conforme necessário
+    
+    myFilter = MatchesFilter(request.GET, queryset=queryset_agg)
+    queryset = Matches.objects.filter(GameId__in=set(myFilter.qs.values_list('GameId_id', flat=True)))
     table = MatchesTable(queryset)   
     
-    myFilter = MatchesFilter()
     context = {'myFilter': myFilter, 'table': table}
 
     return render(request, 'matches/matches.html', context)
