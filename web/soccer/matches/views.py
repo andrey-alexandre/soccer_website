@@ -6,7 +6,7 @@ import json
 import gspread
 import pandas as pd
 
-from matches.script.one import action
+from matches.script.run import run
 
 from .filters import MatchesFilter
 from .models import Matches, MatchesAgg
@@ -28,7 +28,7 @@ def refresh(request):
     if request.method == 'GET':
         return render(request, 'matches/refresh.html', {'data': ''})
     elif request.method == "POST": 
-        data = action() #the function you want to call 
+        data = run() #the function you want to call 
         return render(request, 'matches/refresh.html', {'data':data})    
 
 def output(request):

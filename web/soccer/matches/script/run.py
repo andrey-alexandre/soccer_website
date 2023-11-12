@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-import .tools
-from .soccer import Soccer
+import matches.script.tools as tools
+from matches.script.soccer import Soccer
 
 
 def run():
@@ -25,7 +25,7 @@ def run():
     [soccer_list[i].run(driver[i % 5]) for i in range(len(soccer_list))]
     soccer_stats_full = pd.concat([tools.treat_stats(i) for i in soccer_list])
 
-    gc = gspread.service_account(filename='../Soccer.json')
+    gc = gspread.service_account(filename='web/Soccer.json')
     sh = gc.open("Soccer")
     worksheet = sh.worksheet('Soccer')
 
